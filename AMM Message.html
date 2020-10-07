@@ -36,6 +36,11 @@
                         background-size: 150% auto;
                         /* position: absolute; */
                         display: block;
+                        overflow: hidden;
+}
+#imagendeam img{
+width: auto;
+height: 100%;
 }
 #imagen-aprobacion{
   display: block;
@@ -122,8 +127,13 @@ td .es-button-border-2:hover {
                         <div style="width: 600px;">
                         
                         
-                        <div id="imagendeam" style=" background-image:url('<?=estandar.fotoam?>'); width: 100px; height: 100px;"></div>
                         
+                        <!-- Reemplazo -->
+                        <div id="imagendeam" style=" width: 100px; height: 100px;">
+                        <img src="<?=estandar.fotoam?>" >
+                        </div>
+                          <!-- ORIGINAL: -->
+                       <!--  <div id="imagendeam" style=" background-image:url('<?=estandar.fotoam?>'); width: 100px; height: 100px;"></div> -->
                         
                         
                          <!-- <img class="adapt-img" src="images/barra.jpg" alt="" style="clip-path: circle(50% at 50% 50% ); position: absolute;" width="50"> -->
